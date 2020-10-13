@@ -1,0 +1,27 @@
+public class Droid{
+
+int batterylevel ;
+String name ;
+public Droid(String droidName){
+System.out.print("done");
+name =droidName ;
+batterylevel = 100;
+}
+public void performTask(String task){
+System.out.print("codey is performing task"+ task);
+batterylevel-=10;
+}
+
+public static void main (String[] args){
+
+Droid dro = new Droid("codey") ;
+
+System.out.println("im the droid" + dro.name+ "my battery level is "+ dro.batterylevel);
+dro.performTask("killing");
+System.out.println(dro.batterylevel);
+
+}
+
+
+
+}
